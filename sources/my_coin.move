@@ -23,13 +23,13 @@ module my_coin::my_coin {
         otw: T,
         ctx: &mut TxContext
     ): TreasuryCap<T> {
-        let url = url::new_unsafe_from_bytes(b"https://iamtzar.com/wp-content/uploads/2025/08/01.png");
+        let url = url::new_unsafe_from_bytes(b"https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjgwLTE2Ni1wLWwxZGJ1cTN2LnBuZw.png");
 
         let (treasury_cap, metadata) = coin::create_currency(
             otw, 9,
-            b"MC",
-            b"My Coin",
-            b"My First Ever Coin",
+            b"Batafla",
+            b"Fly away",
+            b"My First Ever Coin.",
             option::some(url),
             ctx
         );
